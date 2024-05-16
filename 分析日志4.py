@@ -10,11 +10,12 @@ def check_json_field(json_str, field_name):
         # 检查字段是否存在  
         if field_name in data:  
             field_value = data[field_name]  
-            print(field_value)  
+
             # 检查字段值是否为字符串且长度为6  
-            if isinstance(field_value, str) or len(field_value) == 6:  
+            if isinstance(field_value, str) and len(field_value) == 6:  
                 # 检查字段值是否包含特定的字符串序列  
                 if any(sub_str in field_value for sub_str in ["sn", "ta", "ag", "au"]):  
+                    print(field_value)  
                     return True  
     except json.JSONDecodeError:  
         # 如果JSON字符串无效，返回False或抛出异常  
