@@ -45,7 +45,7 @@ def wirteDoc(filename,content):
 
 """    
     # 指定文件夹路径  
-    folder_path = "F:\\xeq项目\\宏源恒利EQ版本发布\\1.0.6\\文档\\发布内容"  
+    folder_path = "F:\\xeq项目\\宏源恒利EQ版本发布\\1.0.8\\文档\\发布内容"  
     with open(os.path.join(folder_path,filename.replace("*","").replace(" ","_高怀玉_")+".txt"), "w") as f:  
         # 向文件中写入内容  
         s = content.replace("/fileName/",filename)
@@ -54,6 +54,7 @@ def wirteDoc(filename,content):
     # 输出提示信息  
     print("文件已创建并写入内容。")
 
-arr = ['P013XEQ-4699 宏源恒利-多腿香草导出明细支持勾选功能']
+arr = ['P013XEQ-4913 宏源恒利---期权定价导出信息支持编辑',
+       'P013XEQ-4914 宏源恒利---期权定价导出信息复制按钮支持复制格式']
 for i in arr:
     wirteDoc(i,i)
