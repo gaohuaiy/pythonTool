@@ -54,7 +54,6 @@ def wirteDoc(filename,content):
     # 输出提示信息  
     print("文件已创建并写入内容。")
 
-arr = ['P013XEQ-4913 宏源恒利---期权定价导出信息支持编辑',
-       'P013XEQ-4914 宏源恒利---期权定价导出信息复制按钮支持复制格式']
+arr = ['P013XEQ-5116 宏源恒利---EQ试定价页面、簿记页面接入实时行情']
 for i in arr:
     wirteDoc(i,i)
