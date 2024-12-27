@@ -1,13 +1,13 @@
 import oracledb
 import json
-
+# 若未安装 oracledb 执行 命令 pip install oracledb
 # Oracle数据库连接信息（建议使用环境变量或配置文件来管理这些信息）
 db_user = 'xir_eq'
 db_password = 'xpar'
 db_dsn = '172.19.4.28:1521/hlht'
 cursor = None
 connection = None
-
+#设置一下 本机Oracle客户端路径
 oracledb.init_oracle_client(lib_dir="C:\\devsoft\\oracle\\client\\instantclient_11_2")
 
 try:
